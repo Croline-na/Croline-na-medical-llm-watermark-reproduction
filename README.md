@@ -1,4 +1,4 @@
-# 医学预训练语言模型水印：课程简化复现
+# 医学预训练语言模型水印：简化复现
 
 本项目按照 Kong 等人在 ACM Multimedia 2025 发表的论文，对 BioBERT 和 NCBI-Disease 上的 NER 水印方法做简化复现，比较有水印、无水印模型。论文 DOI：https://doi.org/10.1145/3746027.3755548 。本代码为独立简化实现，不是作者原始代码；作者仓库：https://github.com/edu-yinzhaoxia/Med-PLMW 。
 
