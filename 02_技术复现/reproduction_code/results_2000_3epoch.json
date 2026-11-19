@@ -1,0 +1,32 @@
+{
+  "config": {
+    "train_samples": 2000,
+    "epochs": 3.0,
+    "batch_size": 4,
+    "seed": 42
+  },
+  "model": "dmis-lab/biobert-base-cased-v1.2",
+  "dataset": "ncbi/ncbi_disease",
+  "train_examples": 2000,
+  "test_examples": 941,
+  "labels": [
+    "O",
+    "B-Disease",
+    "I-Disease"
+  ],
+  "results": {
+    "baseline": {
+      "test_entity_f1": 0.8516842634489693,
+      "trigger_entity_successes": 4,
+      "trigger_samples": 100,
+      "trigger_entity_rate": 0.04
+    },
+    "watermarked": {
+      "test_entity_f1": 0.8516842634489693,
+      "trigger_entity_successes": 19,
+      "trigger_samples": 100,
+      "trigger_entity_rate": 0.19
+    }
+  },
+  "limitations": "Simplified NER verification: shared eligible test sentences, prefix insertion, up to 100 samples. Not identical to the paper verification set. One run; not a calibrated ownership threshold."
+}
